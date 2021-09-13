@@ -43,23 +43,18 @@ class MyApp extends StatelessWidget {
                   horizontal: 25.0,
                   vertical: 10.0,
                 ),
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade700,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade700,
+                  ),
+                  title: Text(
+                    '+959 123 456 78',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+959 123 456 78',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
               Card(
@@ -67,24 +62,18 @@ class MyApp extends StatelessWidget {
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal.shade700,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade700,
+                  ),
+                  title: Text(
+                    'ktz@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'ktz@email.com',
-                      style: TextStyle(
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
